@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Metropolis-Regular.otf">
+            <string>Metropolis-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TagsCVC" customModule="Aviation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="40"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="40"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3u0-Nr-vOq">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="40"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UBH-Vw-WbL">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tag" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xWJ-Zf-L4k">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="40"/>
+                                        <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="15"/>
+                                        <color key="textColor" name="TextBlackColors"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=compact">
+                                            <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="13"/>
+                                        </variation>
+                                    </label>
+                                    <button hidden="YES" opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1AR-Ju-g1g">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="1AR-Ju-g1g" secondAttribute="height" multiplier="1:1" id="pmY-iD-LAK"/>
+                                        </constraints>
+                                        <color key="tintColor" name="TextBlackColors"/>
+                                        <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                        <state key="normal" image="ic_delete_tags"/>
+                                        <connections>
+                                            <action selector="btnDeleteAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="erV-CO-Ssi"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.76862745098039209" green="0.76862745098039209" blue="0.76862745098039209" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="UBH-Vw-WbL" secondAttribute="trailing" id="6BW-aj-hTs"/>
+                            <constraint firstItem="UBH-Vw-WbL" firstAttribute="leading" secondItem="3u0-Nr-vOq" secondAttribute="leading" id="B3Q-lF-JhT"/>
+                            <constraint firstAttribute="bottom" secondItem="UBH-Vw-WbL" secondAttribute="bottom" id="d20-ri-PF1"/>
+                            <constraint firstItem="UBH-Vw-WbL" firstAttribute="top" secondItem="3u0-Nr-vOq" secondAttribute="top" id="pcj-Am-mWI"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="3u0-Nr-vOq" secondAttribute="bottom" id="Alv-DF-oSQ"/>
+                <constraint firstItem="3u0-Nr-vOq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="DHb-e7-7Ss"/>
+                <constraint firstItem="3u0-Nr-vOq" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="cD0-x6-av3"/>
+                <constraint firstAttribute="trailing" secondItem="3u0-Nr-vOq" secondAttribute="trailing" id="yqo-fK-3lX"/>
+            </constraints>
+            <connections>
+                <outlet property="btnDelete" destination="1AR-Ju-g1g" id="W2c-ow-XpZ"/>
+                <outlet property="lblTags" destination="xWJ-Zf-L4k" id="TBi-FZ-3dv"/>
+                <outlet property="viewTagsBG" destination="3u0-Nr-vOq" id="DLP-ZB-90C"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="79.6875"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_delete_tags" width="48" height="48"/>
+        <namedColor name="TextBlackColors">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

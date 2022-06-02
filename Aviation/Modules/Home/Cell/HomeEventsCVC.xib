@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Metropolis-Bold.otf">
+            <string>Metropolis-Bold</string>
+        </array>
+        <array key="Metropolis-Regular.otf">
+            <string>Metropolis-Regular</string>
+        </array>
+        <array key="Metropolis-SemiBold.otf">
+            <string>Metropolis-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HomeEventsCVC" customModule="Aviation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="244" height="257"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="244" height="257"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="60u-r0-UgH">
+                        <rect key="frame" x="0.0" y="0.0" width="244" height="257"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MX8-nu-INN">
+                                <rect key="frame" x="0.0" y="0.0" width="244" height="257"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y0P-4i-6fG">
+                                        <rect key="frame" x="20" y="15" width="50" height="16"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="16" id="7Hk-x6-KTJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="16"/>
+                                        <color key="textColor" name="004061Blue"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ground with Joey" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1kY-ig-YJH">
+                                        <rect key="frame" x="20" y="41" width="204" height="16"/>
+                                        <fontDescription key="fontDescription" name="Metropolis-SemiBold" family="Metropolis" pointSize="16"/>
+                                        <color key="textColor" name="TextBlackColors"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="MTd-il-2Br">
+                                        <rect key="frame" x="20" y="77" width="204" height="159"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="y2l-lf-lUL">
+                                                <rect key="frame" x="0.0" y="0.0" width="204" height="94"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t5H-Up-QFH">
+                                                        <rect key="frame" x="0.0" y="0.0" width="204" height="22"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_home_calander" translatesAutoresizingMaskIntoConstraints="NO" id="noX-al-Ukr">
+                                                                <rect key="frame" x="0.0" y="0.0" width="22" height="22"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="noX-al-Ukr" secondAttribute="height" multiplier="1:1" id="NPv-6X-53T"/>
+                                                                    <constraint firstAttribute="height" constant="22" id="cVk-AX-weA"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="November 17, 2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dff-Zq-DR8">
+                                                                <rect key="frame" x="32" y="5" width="172" height="12"/>
+                                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="12"/>
+                                                                <color key="textColor" name="TextBlackColors"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="dff-Zq-DR8" firstAttribute="leading" secondItem="noX-al-Ukr" secondAttribute="trailing" constant="10" id="9vS-HZ-IjP"/>
+                                                            <constraint firstItem="noX-al-Ukr" firstAttribute="top" secondItem="t5H-Up-QFH" secondAttribute="top" id="Cf3-wW-B7J"/>
+                                                            <constraint firstItem="dff-Zq-DR8" firstAttribute="centerY" secondItem="t5H-Up-QFH" secondAttribute="centerY" id="DWh-IL-Kqi"/>
+                                                            <constraint firstAttribute="bottom" secondItem="noX-al-Ukr" secondAttribute="bottom" id="Hzr-Or-pbb"/>
+                                                            <constraint firstAttribute="trailing" secondItem="dff-Zq-DR8" secondAttribute="trailing" id="K0I-i0-Xjz"/>
+                                                            <constraint firstItem="noX-al-Ukr" firstAttribute="leading" secondItem="t5H-Up-QFH" secondAttribute="leading" id="RyL-Pv-d3p"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T8t-R2-JA0">
+                                                        <rect key="frame" x="0.0" y="32" width="204" height="22"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_home_clock" translatesAutoresizingMaskIntoConstraints="NO" id="kQ9-yM-dUx">
+                                                                <rect key="frame" x="0.0" y="0.0" width="22" height="22"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="22" id="Jpi-00-YBF"/>
+                                                                    <constraint firstAttribute="width" secondItem="kQ9-yM-dUx" secondAttribute="height" multiplier="1:1" id="h7i-hN-oRc"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:30 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Zt-Nw-mSi">
+                                                                <rect key="frame" x="32" y="5" width="172" height="12"/>
+                                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="12"/>
+                                                                <color key="textColor" name="TextBlackColors"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="0Zt-Nw-mSi" firstAttribute="centerY" secondItem="T8t-R2-JA0" secondAttribute="centerY" id="EV7-xm-9tO"/>
+                                                            <constraint firstItem="0Zt-Nw-mSi" firstAttribute="leading" secondItem="kQ9-yM-dUx" secondAttribute="trailing" constant="10" id="FCB-nO-1nC"/>
+                                                            <constraint firstAttribute="trailing" secondItem="0Zt-Nw-mSi" secondAttribute="trailing" id="FqN-Oq-xXO"/>
+                                                            <constraint firstItem="kQ9-yM-dUx" firstAttribute="top" secondItem="T8t-R2-JA0" secondAttribute="top" id="ITW-zi-TER"/>
+                                                            <constraint firstAttribute="bottom" secondItem="kQ9-yM-dUx" secondAttribute="bottom" id="SBd-ww-dlV"/>
+                                                            <constraint firstItem="kQ9-yM-dUx" firstAttribute="leading" secondItem="T8t-R2-JA0" secondAttribute="leading" id="vi0-kR-Ccn"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sNz-w5-1be">
+                                                        <rect key="frame" x="0.0" y="64" width="204" height="30"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_home_location" translatesAutoresizingMaskIntoConstraints="NO" id="JrC-3e-n5d">
+                                                                <rect key="frame" x="0.0" y="0.0" width="22" height="22"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="22" id="218-Jn-Tjr"/>
+                                                                    <constraint firstAttribute="width" secondItem="JrC-3e-n5d" secondAttribute="height" multiplier="1:1" id="rgq-qT-JPd"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iby-NH-zid">
+                                                                <rect key="frame" x="32" y="-1" width="172" height="24"/>
+                                                                <string key="text">3875 Davis Street, 
+Atlanta, Georgia</string>
+                                                                <fontDescription key="fontDescription" name="Metropolis-Regular" family="Metropolis" pointSize="12"/>
+                                                                <color key="textColor" name="TextBlackColors"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="iby-NH-zid" secondAttribute="trailing" id="18d-YD-pu0"/>
+                                                            <constraint firstItem="JrC-3e-n5d" firstAttribute="top" secondItem="sNz-w5-1be" secondAttribute="top" id="Dam-wT-ZEs"/>
+                                                            <constraint firstItem="iby-NH-zid" firstAttribute="leading" secondItem="JrC-3e-n5d" secondAttribute="trailing" constant="10" id="Jsq-JH-Rid"/>
+                                                            <constraint firstAttribute="height" constant="30" id="MKN-FT-PO4"/>
+                                                            <constraint firstItem="iby-NH-zid" firstAttribute="centerY" secondItem="JrC-3e-n5d" secondAttribute="centerY" id="bxb-ES-eaA"/>
+                                                            <constraint firstItem="JrC-3e-n5d" firstAttribute="leading" secondItem="sNz-w5-1be" secondAttribute="leading" id="jwi-Zc-gkY"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9tD-uv-KGJ">
+                                                <rect key="frame" x="46" y="119" width="112" height="40"/>
+                                                <color key="backgroundColor" name="004061Blue"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="9dy-DA-frj"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Metropolis-Bold" family="Metropolis" pointSize="16"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Edit">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="Round" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="btnEditClicks:" destination="gTV-IL-0wX" eventType="touchUpInside" id="2r4-Nu-UtX"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="y2l-lf-lUL" firstAttribute="width" secondItem="MTd-il-2Br" secondAttribute="width" id="exw-74-xgW"/>
+                                            <constraint firstItem="9tD-uv-KGJ" firstAttribute="width" secondItem="MTd-il-2Br" secondAttribute="width" multiplier="0.54918" id="obf-Sm-Meu"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="1kY-ig-YJH" firstAttribute="top" secondItem="Y0P-4i-6fG" secondAttribute="bottom" constant="10" id="5lg-qr-vPJ"/>
+                                    <constraint firstItem="Y0P-4i-6fG" firstAttribute="top" secondItem="MX8-nu-INN" secondAttribute="top" constant="15" id="7aw-On-37I"/>
+                                    <constraint firstItem="MTd-il-2Br" firstAttribute="top" secondItem="1kY-ig-YJH" secondAttribute="bottom" constant="20" id="QUd-FI-azP"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="MTd-il-2Br" secondAttribute="bottom" constant="20" id="SXQ-15-ny3"/>
+                                    <constraint firstAttribute="trailing" secondItem="1kY-ig-YJH" secondAttribute="trailing" constant="20" id="Ukc-Nl-WEN"/>
+                                    <constraint firstAttribute="trailing" secondItem="MTd-il-2Br" secondAttribute="trailing" constant="20" id="ZS3-3U-Xal"/>
+                                    <constraint firstItem="1kY-ig-YJH" firstAttribute="leading" secondItem="Y0P-4i-6fG" secondAttribute="leading" id="o00-sm-vY2"/>
+                                    <constraint firstItem="MTd-il-2Br" firstAttribute="leading" secondItem="Y0P-4i-6fG" secondAttribute="leading" id="oOg-G9-3aP"/>
+                                    <constraint firstItem="Y0P-4i-6fG" firstAttribute="leading" secondItem="MX8-nu-INN" secondAttribute="leading" constant="20" id="xI8-EV-voV"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MX8-nu-INN" firstAttribute="leading" secondItem="60u-r0-UgH" secondAttribute="leading" id="0ck-ba-hdf"/>
+                            <constraint firstAttribute="bottom" secondItem="MX8-nu-INN" secondAttribute="bottom" id="bc7-c3-e10"/>
+                            <constraint firstItem="MX8-nu-INN" firstAttribute="top" secondItem="60u-r0-UgH" secondAttribute="top" id="hry-zJ-ip9"/>
+                            <constraint firstAttribute="trailing" secondItem="MX8-nu-INN" secondAttribute="trailing" id="o2B-7z-fac"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="60u-r0-UgH" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="0aS-Hi-lsL"/>
+                <constraint firstAttribute="bottom" secondItem="60u-r0-UgH" secondAttribute="bottom" id="4Z5-Qi-acS"/>
+                <constraint firstItem="60u-r0-UgH" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Yxi-2o-Lnw"/>
+                <constraint firstAttribute="trailing" secondItem="60u-r0-UgH" secondAttribute="trailing" id="f4s-Mm-crE"/>
+            </constraints>
+            <size key="customSize" width="159" height="140"/>
+            <connections>
+                <outlet property="btnReschedule" destination="9tD-uv-KGJ" id="q71-3f-NLI"/>
+                <outlet property="lblDate" destination="dff-Zq-DR8" id="Tnf-4J-kj1"/>
+                <outlet property="lblEventDay" destination="Y0P-4i-6fG" id="tGG-Vp-tJl"/>
+                <outlet property="lblEventTitle" destination="1kY-ig-YJH" id="f6H-Xf-d64"/>
+                <outlet property="lblLocation" destination="iby-NH-zid" id="1XP-TM-Z3j"/>
+                <outlet property="lblTime" destination="0Zt-Nw-mSi" id="iev-fG-laM"/>
+            </connections>
+            <point key="canvasLocation" x="210.1449275362319" y="92.745535714285708"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_home_calander" width="22.5" height="22.5"/>
+        <image name="ic_home_clock" width="22.5" height="22.5"/>
+        <image name="ic_home_location" width="22.5" height="22.5"/>
+        <namedColor name="004061Blue">
+            <color red="0.0" green="0.25099998712539673" blue="0.37999999523162842" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextBlackColors">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

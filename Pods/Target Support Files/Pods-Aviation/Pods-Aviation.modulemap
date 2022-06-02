@@ -1,0 +1,6 @@
+framework module Pods_Aviation {
+  umbrella header "Pods-Aviation-umbrella.h"
+
+  export *
+  module * { export * }
+}
